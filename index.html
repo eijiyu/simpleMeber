@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Simple Member</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='aandd'>
+        <link href='css/bootstrap.css' rel='stylesheet'>
+        <link href='css/bootstrap-responsive.css' rel='stylesheet'>        
+        <link href='css/jquery-ui-1.8.23.custom.css' rel='stylesheet'>
+        <style type='text/css'>
+          body {
+            padding-top: 60px;
+            padding-bottom: 20px;
+          }
+        </style>
+</head>
+<body>
+    <div class='navbar navbar-inverse navbar-fixed-top'>
+        <div class='navbar-inner'>
+          <div class='container'>
+            <button type='button' class='btn btn-navbar' data-toggle='collapse' data-target='.nav-collapse'>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+              <span class='icon-bar'></span>
+            </button>
+            <a class='brand' href='{$_SERVER['PHP_SELF']}'> 客戶管理首頁</a>
+            <div class='nav-collapse collapse'>
+              <ul class='nav'>
+                <li class='active'>
+                  <a href='{$_SERVER['PHP_SELF']}?op=add_user_form'>新增客戶資料</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!--放入選單結束-->
+          <div class='container' id='main_content'>
+            <!-- 主要內容欄位開始 -->
+            {$content}
+            <!-- 主要內容欄位結束 -->
+            <!-- 頁腳開始 -->
+            <footer>
+            </footer>
+    <script src='js/jquery1.8.js'></script>
+    <script src='js/jquery-ui-1.8.23.custom.min.js'></script>
+    <script src='js/bootstrap.js'></script>
+</body>
+</html>
