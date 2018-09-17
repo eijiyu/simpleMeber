@@ -1,2 +1,2 @@
-# simpleMebers
+# simpleMeber
 A Simple Member Systerm.
